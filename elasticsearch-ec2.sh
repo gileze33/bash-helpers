@@ -34,9 +34,7 @@ echo "        region: $4" >> /usr/local/elasticsearch/elasticsearch-0.20.2/confi
 
 cd bin
 yum install -y git
-git clone https://github.com/elasticsearch/elasticsearch-servicewrapper.git
+git clone https://github.com/gileze33/elasticsearch-servicewrapper.git
 mv elasticsearch-servicewrapper/service ./
 /usr/local/elasticsearch/elasticsearch-0.20.2/bin/service/elasticsearch install
 sudo chkconfig elasticsearch on
-
-#todo - work out how to fix config file to look for ElasticSearchF rather than ElasticSearchF !!!!!!
