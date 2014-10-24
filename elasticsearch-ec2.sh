@@ -38,3 +38,4 @@ git clone https://github.com/gileze33/elasticsearch-servicewrapper.git
 mv elasticsearch-servicewrapper/service ./
 /usr/local/elasticsearch/elasticsearch-0.20.2/bin/service/elasticsearch install
 sudo chkconfig elasticsearch on
+shutdown -r now
