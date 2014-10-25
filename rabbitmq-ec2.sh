@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# usage: TBC
+# usage: . HOSTNAME
 
 if [ "$(whoami)" != "root" ]; then
 	echo "Sorry, you are not root."
@@ -8,8 +8,8 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 
-echo "rabbit" > /etc/hostname
-echo "127.0.0.1 rabbit" >> /etc/hosts
+echo "$0" > /etc/hostname
+echo "127.0.0.1 $0" >> /etc/hosts
 hostname -F /etc/hostname
 
 
