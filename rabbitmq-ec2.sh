@@ -8,9 +8,9 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 
-echo "$0" > /etc/hostname
-echo "127.0.0.1 $0" >> /etc/hosts
-hostname -F /etc/hostname
+#echo "$0" > /etc/hostname
+#echo "127.0.0.1 $0" >> /etc/hosts
+#hostname -F /etc/hostname
 
 
 yum install -y gcc gcc-c++ make libxslt fop ncurses-devel openssl-devel *openjdk-devel unixODBC unixODBC-devel

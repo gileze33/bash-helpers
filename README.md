@@ -8,4 +8,4 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/gileze33/bash-helpe
 RABBITMQ INSTALLER
 ----
 
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/gileze33/bash-helpers/master/rabbitmq-ec2.sh)" HOSTNAME
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/gileze33/bash-helpers/master/rabbitmq-ec2.sh)"
