@@ -13,7 +13,7 @@ unzip elasticsearch-1.3.4 -d /usr/local/elasticsearch
 rm elasticsearch-1.3.4.zip
 
 cd /usr/local/elasticsearch/elasticsearch-1.3.4/
-bin/plugin -install elasticsearch/elasticsearch-cloud-aws/1.4.0
+bin/plugin -install elasticsearch/elasticsearch-cloud-aws/2.2.0
 
 echo "cluster.name: $0" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
 echo "cloud:" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
@@ -33,7 +33,7 @@ echo "        region: $4" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config
 
 cd bin
 yum install -y git
-git clone https://github.com/gileze33/elasticsearch-servicewrapper.git
+git clone https://github.com/elasticsearch/elasticsearch-servicewrapper.git
 mv elasticsearch-servicewrapper/service ./
 /usr/local/elasticsearch/elasticsearch-1.3.4/bin/service/elasticsearch install
 sudo chkconfig elasticsearch on
