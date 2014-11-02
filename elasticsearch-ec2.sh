@@ -16,7 +16,9 @@ cd /usr/local/elasticsearch/elasticsearch-1.3.4/
 bin/plugin -install elasticsearch/elasticsearch-cloud-aws/1.4.0
 
 
-echo "cluster.name: $0" > /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
+echo "script.disable_dynamic: false" > /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
+
+echo "cluster.name: $0" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
 echo "cloud:" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
 echo "    aws:" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
 echo "        access_key: $1" >> /usr/local/elasticsearch/elasticsearch-1.3.4/config/elasticsearch.yml
