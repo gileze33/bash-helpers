@@ -23,9 +23,9 @@ mkdir RabbitServer
 
 cd RabbitServer
 
-wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.6.0/rabbitmq-server-3.6.0-1.noarch.rpm
+wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.5.7/rabbitmq-server-3.5.7-1.noarch.rpm
 
-rpm -i rabbitmq-server-3.6.0-1.noarch.rpm
+rpm -i rabbitmq-server-3.5.7-1.noarch.rpm
 
 rabbitmq-plugins enable rabbitmq_management
 chkconfig rabbitmq-server on
