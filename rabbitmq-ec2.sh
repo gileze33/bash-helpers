@@ -29,4 +29,4 @@ rpm -i rabbitmq-server-3.5.7-1.noarch.rpm
 
 rabbitmq-plugins enable rabbitmq_management
 chkconfig rabbitmq-server on
-shutdown -r now
+service rabbitmq-server start
